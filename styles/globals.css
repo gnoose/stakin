@@ -2,19 +2,43 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+html {
+  font-size: 14px;
+  font-family: Poppins, sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.btn {
+  @apply focus:outline-none focus:ring disabled:opacity-50 font-bold rounded-lg disabled:cursor-not-allowed;
 }
 
-* {
-  box-sizing: border-box;
+.btn-primary {
+  @apply bg-gradient-to-r from-primary to-primary-75 focus:ring-primary-75 text-white;
+}
+
+.btn-warning {
+  @apply bg-gradient-to-r from-warning to-warning-75 focus:ring-warning-75 text-white;
+}
+
+.btn-danger {
+  @apply bg-danger hover:bg-danger-200 focus:ring-danger-75 text-white;
+}
+
+.btn-light {
+  @apply bg-light hover:bg-light-200 focus:ring-light-75 text-light-500;
+}
+
+.btn-info {
+  @apply bg-primary hover:bg-primary-200 focus:ring-primary-75 text-white;
+}
+
+.btn-lg {
+  @apply px-25 py-15 text-14 rounded-lg;
+}
+
+.btn-md {
+  @apply px-25 py-15 text-12 rounded-lg;
+}
+
+.btn-sm {
+  @apply px-25 py-10 text-10 rounded;
 }
