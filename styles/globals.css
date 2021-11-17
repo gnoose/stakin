@@ -42,3 +42,8 @@ html {
 .btn-sm {
   @apply px-25 py-10 text-10 rounded;
 }
+
+.btn-mini {
+  height: 30px;
+  @apply px-20 py-5 text-10 rounded-lg;
+}
