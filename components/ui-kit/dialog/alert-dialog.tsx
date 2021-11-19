@@ -1,4 +1,4 @@
-import { DialogResult, DialogType } from './types';
+import {DialogResult, DialogType} from './types';
 import Icon from '../icon';
 
 export interface AlertAction {

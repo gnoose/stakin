@@ -40,7 +40,11 @@ export function doGet<T>(url: string): Promise<T> {
 }
 
 function doFetch<T>(url: string, method = 'GET', payload: any = undefined, isFormData = false): Promise<T> {
-  const headers = isFormData ? undefined : { 'Content-Type': 'application/json' };
+  const token = localStorage.getItem('authToken');
+  const headers = isFormData ? undefined : {
+    'Content-Type': 'application/json',
+    'Authorization': `bearer ${token}`,
+  };
   let body: any;
   if (isFormData) {
     body = payload;

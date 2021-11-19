@@ -1,4 +1,4 @@
-import { doGet, doPost, doPut } from './http';
+import {doGet, doPost} from './http';
 import {AuthTokenResponse, LoginRequest, RegisterRequest, UserInfo} from '../types/auth';
 
 export const AuthService = {
@@ -8,7 +8,7 @@ export const AuthService = {
   register: (body: RegisterRequest): Promise<AuthTokenResponse> => {
     return doPost('/auth/register', body);
   },
-  auth: () => {
+  auth: (): Promise<UserInfo> => {
     return doGet<UserInfo>('/auth');
   }
 };

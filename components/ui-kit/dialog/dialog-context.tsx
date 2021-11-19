@@ -1,6 +1,6 @@
-import { createContext, ReactNode, useContext, useState } from 'react';
+import {createContext, ReactNode, useContext, useState} from 'react';
 
-import { Dialog } from './dialog';
+import {Dialog} from './dialog';
 
 type dialogContextType = {
     openDialog: (dialog: ReactNode) => void,

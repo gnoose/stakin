@@ -1,6 +1,6 @@
-import { useDialog } from './dialog-context';
-import { AlertAction, AlertDialog } from './alert-dialog';
-import { DialogResult, DialogType } from './types';
+import {useDialog} from './dialog-context';
+import {AlertAction, AlertDialog} from './alert-dialog';
+import {DialogResult, DialogType} from './types';
 
 interface AlertService {
   notify: (title: string, message: string, okCaption: string) => Promise<DialogResult>,
