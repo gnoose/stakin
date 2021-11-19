@@ -1,5 +1,6 @@
 import { ReactNode, Children, cloneElement, isValidElement } from 'react';
 import Modal from 'react-modal';
+
 import { modalCustomStyles } from './types';
 
 Modal.setAppElement('#__next');

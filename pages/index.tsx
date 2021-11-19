@@ -1,7 +1,5 @@
-
 import Head from 'next/head'
 import Image from 'next/image'
-import Link from 'next/link';
 
 import Layout from '../components/layout/layout';
 
@@ -35,8 +33,8 @@ export default function Home() {
           <div className="h-700 overflow-auto">
             <h1 className="text-center py-50 text-24 font-bold">Why Stakin?</h1>
             <div className="md:flex items-start justify-center px-20 lg:px-100">
-              {why_us.map(item => (
-                <div className="flex flex-col items-center p-15 md:w-1/3">
+              {why_us.map((item, index) => (
+                <div key={index} className="flex flex-col items-center p-15 md:w-1/3">
                   <Image src={item.image} width={150} height={150}/>
                   <p className="py-15 text-20 font-bold text-warning">{item.title}</p>
                   <p className="text-light-400">{item.content}</p>

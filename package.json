@@ -9,10 +9,12 @@
   },
   "dependencies": {
     "@tailwindcss/aspect-ratio": "^0.3.0",
+    "formik-yup": "^0.0.5",
     "next": "12.0.4",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "react-modal": "^3.14.4"
+    "react-modal": "^3.14.4",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "@types/node": "16.11.7",
