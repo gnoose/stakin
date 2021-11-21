@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="container mx-auto">
         <div className="grid lg:grid-cols-3 gap-20">
           <div className="mb-40 lg:mb-0">
-            <Link href="/"><a><Image src="/assets/images/logo-green.svg" height={37} width={130} alt="Stakin logo" /></a></Link>
+            <Link href="/"><a><Image src="/assets/images/logo-green.svg" height={37} width={130} alt="Stakin logo"/></a></Link>
             <div className="flex flex-col font-medium mt-30 lg:mt-65">
               <p className="text-white">Your Trusted Crypto Reward</p>
               <a href="mailto:jieli@stakin.com" className="text-warning">jieli@stakin.com</a>

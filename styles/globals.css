@@ -48,6 +48,10 @@ html {
   @apply px-20 py-5 text-10 rounded-lg;
 }
 
+.input {
+  @apply px-10 py-5 text-14 rounded-lg;
+}
+
 /* spinner */
 .spinner .path {
   stroke: #07A39D;

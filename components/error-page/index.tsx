@@ -5,9 +5,9 @@ interface Props {
   message: string;
 }
 
-export default function ErrorPage({ statusCode, message }: Props) {
+export default function ErrorPage({statusCode, message}: Props) {
   if (statusCode === 404) {
-    return <Error404 />;
+    return <Error404/>;
   }
   return (<section className="w-screen h-screen bg-primary">
     <div className="container mx-auto text-white">

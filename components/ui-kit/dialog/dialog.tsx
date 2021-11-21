@@ -22,7 +22,7 @@ export function Dialog(props: Props) {
   >
     {Children.map(props.children, child => {
       if (isValidElement(child)) {
-        return cloneElement(child, { closeDialog: props.closeDialog });
+        return cloneElement(child, {closeDialog: props.closeDialog});
       }
       return child;
     })}

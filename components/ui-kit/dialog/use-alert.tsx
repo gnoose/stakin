@@ -13,21 +13,24 @@ export default function useAlert(): AlertService {
 
   const notify = (title: string, message: string, okCaption: string): Promise<DialogResult> => {
     return new Promise(resolve => {
-      dialog.openDialog(<AlertDialog message={message} title={title} okCaption={okCaption} onClose={res => resolve(res)} />);
+      dialog.openDialog(<AlertDialog message={message} title={title} okCaption={okCaption}
+                                     onClose={res => resolve(res)}/>);
     });
   };
 
   const confirm = (title: string, message: string): Promise<DialogResult> => {
     return new Promise(resolve => {
-      dialog.openDialog(<AlertDialog message={message} title={title} onClose={res => resolve(res)} type={DialogType.Confirmation} />);
+      dialog.openDialog(<AlertDialog message={message} title={title} onClose={res => resolve(res)}
+                                     type={DialogType.Confirmation}/>);
     });
   };
 
   const alert = (title: string, message: string, actions: AlertAction[]): Promise<DialogResult> => {
     return new Promise(resolve => {
-      dialog.openDialog(<AlertDialog message={message} title={title} actions={actions} onClose={res => resolve(res)} type={DialogType.Custom} />);
+      dialog.openDialog(<AlertDialog message={message} title={title} actions={actions} onClose={res => resolve(res)}
+                                     type={DialogType.Custom}/>);
     });
   };
 
-  return { notify, confirm, alert };
+  return {notify, confirm, alert};
 }

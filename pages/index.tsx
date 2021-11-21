@@ -35,7 +35,7 @@ export default function Home() {
             <div className="md:flex items-start justify-center px-20 lg:px-100">
               {why_us.map((item, index) => (
                 <div key={index} className="flex flex-col items-center p-15 md:w-1/3">
-                  <Image src={item.image} width={150} height={150}/>
+                  <Image src={item.image} width={150} height={150} alt={item.title}/>
                   <p className="py-15 text-20 font-bold text-warning">{item.title}</p>
                   <p className="text-light-400">{item.content}</p>
                 </div>

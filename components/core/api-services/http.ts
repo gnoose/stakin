@@ -52,7 +52,7 @@ function doFetch<T>(url: string, method = 'GET', payload: any = undefined, isFor
     body = payload ? JSON.stringify(payload) : null;
   }
   return new Promise((resolve, reject) => {
-    fetch(apiUrl(url), { body, headers, method })
+    fetch(apiUrl(url), {body, headers, method})
       .then(async res => {
         const result = await res.json();
         if (res.ok) {
